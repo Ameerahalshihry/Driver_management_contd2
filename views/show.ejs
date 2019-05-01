@@ -1,0 +1,30 @@
+<h1>Company Show Page</h1>
+
+<%= company.name %>
+<%= company.logo %>
+<%= company.address %>
+<%= company.city %>
+<%= company.telephone %>
+<%= company.createdAt %>
+<%= company.updatedAt %>
+
+<ul>
+<% company.cars.forEach((car)=>{ %>
+    <li><%= car.name %></li>
+    <li><%= car.model %></li>
+    <li><%= car.year %></li>
+    <li><%= car.image %></li>
+
+<%}) %>
+
+</ul>
+
+<ul>
+        <% company.drivers.forEach((driver)=>{ %>
+            <li><%= driver.name %></li>
+            <li><%= driver.age %></li>
+            <li><%= driver.image %></li>
+        
+        <%}) %>
+        
+        </ul>
